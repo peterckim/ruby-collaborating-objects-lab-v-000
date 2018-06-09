@@ -15,12 +15,5 @@ class MP3Importer
       File.basename(file) #strips the pathname
     end
   end
-  
-  
-  def import
-    @files.each do |file|
-      new_song = Song.new_by_filename(file)
-    end
-    @files
-  end
+
 end
