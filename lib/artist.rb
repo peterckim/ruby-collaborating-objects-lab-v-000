@@ -36,7 +36,7 @@ class Artist
   end
   
   def print_songs
-    @@all.each do |songs|
+    @songs.each do |songs|
       puts "#{songs}"
     end
   end
