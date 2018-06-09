@@ -12,6 +12,7 @@ class MP3Importer
     @files = Dir.glob("#{@path}/*.mp3").map do |file|
       File.basename(file) #strips the pathname
     end
+    @files
   end
   
   def import
