@@ -23,6 +23,7 @@ class Song
     file_array = file.split(" - ")
     song_artist = file_array[0]
     song_title = file_array[1]
+    new_artist = Artist.new(song_artist)
     new_song = Song.new(song_title)
     new_song.artist = song_artist
     new_song
