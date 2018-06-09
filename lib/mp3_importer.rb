@@ -13,5 +13,9 @@ class MP3Importer
       File.basename(file) #strips the pathname
     end
   end
+  
+  def import
+    
+  end
 
 end
