@@ -18,9 +18,8 @@ class Artist
     @@all
   end
   
-  def songs(song)
+  def add_song(song)
     @songs << song
-    @songs
   end
   
   def save
