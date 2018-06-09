@@ -1,4 +1,5 @@
 class Artist
+  @@all = []
   
   def initialize(artist_name)
     @name = artist_name
@@ -9,5 +10,5 @@ class Artist
     @name = artist_name
   end
   
-  
+  def save
 end
