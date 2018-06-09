@@ -14,7 +14,16 @@ class Artist
     @@all << self
   end
   
-  def self.find_or_create_by_name
-    
+  def self.find_or_create_by_name(name)
+    @@all.each do |artist_object|
+      if artist_object.name == name
+        return artist_object
+      else
+        
+      end
+    end
+    new_artist = Artist.new(name)
+    @@all << new_artist
+    new_artist
   end
 end
